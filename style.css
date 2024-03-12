@@ -1,0 +1,373 @@
+/** @format */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+article {
+  height: 100px;
+  width: 95%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.navsec1 h1 {
+  font-size: 50px;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    rgb(94, 255, 0),
+    rgb(204, 148, 148),
+    rgb(69, 25, 25),
+    rgb(188, 188, 198),
+    green,
+    orange,
+    purple,
+    pink,
+    olive
+  );
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navsec2 {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 300;
+}
+.navsec3 {
+  display: flex;
+  font-size: 25px;
+  width: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+.navicon :hover {
+  transform: scale(1.5);
+}
+@media screen and (max-width: 950px) {
+  .navbar {
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  .navart {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .navsec2 {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: 300;
+    flex-wrap: wrap;
+  }
+
+  .navsec3 {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+/* Header */
+
+.Header {
+  background-color: aliceblue;
+}
+.Headersec {
+  background: url("https://cdn.pixabay.com/photo/2023/05/03/11/51/skagsanden-7967436_960_720.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+
+.Headersec h1 {
+  padding-top: 10px;
+  font-size: 50px;
+  color: black;
+  background: -webkit-image-set("https://i.gifer.com/Vo2o.gif");
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-variant: small-caps;
+}
+
+.Headersec h2 {
+  font-size: 40px;
+  color: black;
+  background: -webkit-image-set(
+    "https://cdn.dribbble.com/users/8156988/screenshots/16260376/media/d72c6c8fe5a5cded14961afbe4590e2d.gif"
+  );
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Headersec button {
+  background: transparent;
+  color: black;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Headersec button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 1040px) {
+  .Headersec {
+    background: url("./img.jpeg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-position-y: 0px;
+  }
+
+  .Headersec h1 {
+    padding-top: 200px;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    background-color: white;
+  }
+
+  .Headersec h2 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }
+
+  .Headersec button {
+    color: white;
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .Headersec button a {
+    text-decoration: none;
+    color: white;
+  }
+}
+/* About Section  */
+.Main {
+  background-color: rgb(177, 183, 188);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 475px;
+  flex-wrap: wrap;
+}
+
+.Main p {
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.Main button {
+  background-color: gray;
+  color: white;
+  box-shadow: 2px 2px 2px black;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.btn:hover {
+  background-color: rgb(186, 189, 26);
+  transform: scale(1.2);
+}
+.info-list {
+  list-style: none;
+  font-size: 20px;
+  height: 400px;
+}
+
+@media screen and (max-width: 1040x) {
+  .Main {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+
+/* Skills Section */
+.sec {
+  height: 60vh;
+  width: 100%;
+  background:gray;
+  padding-left: 100px;
+}
+.sec center h1 {
+  color: crimson;
+  padding: 35px;
+}
+.container {
+  width: 90%;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {
+  width: 90%;
+  background-color: #04aa6d;
+  padding: 0px;
+  border-radius: 50px;
+}
+.css {
+  width: 80%;
+  background-color: #2196f3;
+  padding: 0px;
+  border-radius: 50px;
+}
+.js {
+  width: 25%;
+  background-color: #f44336;
+  padding: 0px;
+  border-radius: 50px;
+}
+.Java {
+  width: 60%;
+  background-color: #24292a;
+  padding: 0px;
+  border-radius: 50px;
+}
+.Mysql {
+  width: 75%;
+  background:red;
+  padding: 0px;
+  border-radius: 50px;
+}
+.Dsa {
+  width: 70%;
+  background-color: #d113ae;
+  padding: 0px;
+  border-radius: 50px;
+}
+
+/* footer */
+.footersec {
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 100vw;
+  gap: 30px;
+}
+
+.footdiv2 {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footdiv2 h2 button a {
+  text-decoration: none;
+  color: white;
+}
+
+.footdiv2 h2 button {
+  padding: 10px;
+  background: grey;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.footart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 1040px) {
+  .footersec {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(rgb(56, 52, 52), rgb(31, 232, 31), blue, yellow);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    rgb(227, 6, 20),
+    rgb(185, 35, 8),
+    white,
+    rgb(227, 227, 4),
+    green
+  );
+}
